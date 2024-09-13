@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Section</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+
+
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #70d650;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333366;
+            margin-bottom: 40px;
+        }
+        .divider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .divider::before,
+        .divider::after {
+            content: '';
+            height: 1px;
+            background-color: #ccc;
+            flex-grow: 1;
+        }
+        .divider span {
+            margin: 0 10px;
+            color: #ccc;
+            font-size: 24px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #ffe6e6;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+        }
+        .feature-icon img {
+            width: 30px;
+            height: 30px;
+        }
+        .feature h3 {
+            color: #333366;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Flexbox for aligning specific features in one line */
+        .feature-line {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ekopay 
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./feature1.html">Features</a></li>
+                    <li><a href="./company.html">Business</a></li>
+                    <li><a href="./index2.html">News</a></li>
+
+                </ul>
+            </div>
+    </nav>
+    </header>
+    <div class="container">
+        <h1>Features</h1>
+        <div class="divider">
+            <span>&#8226;</span>
+            <span>&#8226;</span>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="second.png" alt="Quality Icon">
+                </div>
+                <h3>e-trading</h3>
+                <p>Companies can access a centralised trading platform for GC trading</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="thirds.png" alt="Tracking Icon">
+                </div>
+                <h3>Arbitrage</h3>
+                <p>Companies can track the prices of GCs to get green credits at their own terms</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="forth.png" alt="View Icon">
+                </div>
+                <h3>Offsetting</h3>
+                <p>Way to achieve zero emissions via use of green credits</p>
+            </div>
+        </div>
+
+        <!-- New flexbox section for specific features in one line -->
+        <div class="feature-line">
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="fifth.png" alt="Return Icon">
+                </div>
+                <h3>EcoApps</h3>
+                <p>Promotion for apps with eco-friendly initiatives</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="sixth.png" alt="Payment Icon">
+                </div>
+                <h3>Ecofunding</h3>
+                <p>Crowdfunding option available for up-and-coming eco-friendly startups</p>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
